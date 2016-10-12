@@ -2,14 +2,17 @@
 ---------------
 Team Members:
 ----
-- Ashwin Bharadwaj Laxmi Venkataraman (alakshm6)
+- Ashwin Bharadwaj Lakshmi Venkataramanan (alakshm6)
 - Gaurav Aradhye (garadhy)
 - Stuti Nanda (snanda)
 
 #About the Tool:
 -----------
 
-Chef is a configuration management tool which automates how the infrastructure is configured, deployed and configured, deployed and managed accross networks on machines which could be physical, on cloud or virtual.
+Chef is a Configuration Management tool which automates how the infrastructure is configured, deployed and configured across networks on machines which could be physical, on cloud or virtual. The use of such a tool helps in ensuring that the files, softwares, packages and services are present on the respective machines and are working as required.  
+  
+The need for such tool arises from the fact that the real world applications require management of multiple server machines each performing a different function. Manual management of operations and configuration in such an environment can be a daunting task and hence this calls for tools like Chef which provide Infrastructure as Code.
+
 ##workstation
 ##
 
