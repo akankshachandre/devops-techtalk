@@ -25,7 +25,18 @@ The need for such tool arises from the fact that the real world applications req
 - [Tutorials](https://learn.chef.io/tutorials/)
 
 #Architecture and Components :  
-Chef follows a pull mechanism where in the client nodes pull the data from the server and compare this data with what they have. Any mismatch would cause a complete fetch from server and overwritten on the node and accordingly executed. This data is referred to in the Chef terminology as the recipe. These recipes are developed on workstations by developers/admins and then pushed on to the servers. The client nodes will pull periodically from the server they are configured to talk to and perform the related tasks. All such recipes and configurations are placed within cookbooks. 
+Chef follows a pull mechanism where in the client nodes pull the data from the server and compare this data with what they have. Any mismatch would cause a complete fetch from server and overwritten on the node and accordingly executed. This data is referred to in the Chef terminology as the recipe. These recipes are developed on workstations by developers/admins and then pushed on to the servers. The client nodes will pull periodically from the server they are configured to talk to and perform the related tasks. All such recipes and configurations are placed within cookbooks.   
+
+Client nodes are configured to talk to servers and each client node could be assigned a role, viz. db, appserver etc. The recipes corresponding to these roles will have details like configuration, packages to be installed, services to be brought up, actions to be taken on various resources. The configuration can also detail about which db an appserver might have to connect to thereby providing an infrastructure where the client nodes could talk to one another by establishing connections.  
+  
+####Workstation : 
+These are machines on which developers/admins develop the configuration files/recipes to be used by the chef client nodes upon pushing to chef server.   
+  
+####Chef Server :
+The workstation code is pushed on to the chef server which is the source for the client nodes to pull their recipes from. The client nodes are configured to interact with the chef server using a pull mechanism which is detailed in the description of the chef client.   
+  
+####Chef Client :
+The client nodes are configured to interact with the chef server using a pull mechanism wherein the chef client periodically polls for any change in the configuration and accordingly pull and overwrite the current recipe with that existent on the server. The client nodes are configured to perform certain roles as either a database or an appserver. The chef clients can also be configured to interact with other client nodes by establishing connections thereby establishing a full blown application with an application and database running behind it. 
 
 
 #Advantage
