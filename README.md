@@ -39,13 +39,13 @@ The workstation code is pushed on to the chef server which is the source for the
 The client nodes are configured to interact with the chef server using a pull mechanism wherein the chef client periodically polls for any change in the configuration and accordingly pull and overwrite the current recipe with that existent on the server. The client nodes are configured to perform certain roles as either a database or an appserver. The chef clients can also be configured to interact with other client nodes by establishing connections thereby establishing a full blown application with an application and database running behind it. 
 
 
-#Advantage
+#Advantages
 -------------
 Chef is an established community with a good user base contributing to the community. This makes it easier for navigating through any related issues. Furthermore, chef recipes can be shared, for example, a recipe for deploying LAMP stack could be shared on the marketplace and someone looking for LAMP stack could pick it up and use it for their use case. It has weathered a lot since its inception and hence is technologically more mature than many CM alternatives.  
   
 Chef is Idempotent and hence any un-intended changes made to the nodes can be fixed within a short span, which happens using the pull mechanism, wherein it observes a difference between the contents on the server and on the node and fetches the server copy.
 
-# Disadvatage:
+# Disadvatages
 --------------
 The biggest disadvantage Chef poses for people adopting it newly is the learning curve it has in learning Ruby. Chef requires writing out the recipes in Ruby and hence non-developers might not find it an easy adoption. Chef has a complex environment and in comparison to Ansible it seems pretty bulky in performing the same tasks.   
 Although, the pull mechanism and idempotence form a good feature, enough damage could be inflicted when the time period for successive pull's is high. In addition to that, sometimes a change on the server will not lead to immediate change on the nodes owing to the absence of push mechanism and hence there is a lag between deploying something to the chef server and the same being reflected on the nodes.  
