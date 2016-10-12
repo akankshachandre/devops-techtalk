@@ -8,10 +8,13 @@ Team Members:
 
 #About the Tool:
 -----------
+Chef is a configuration management tool which 
 ## What is chef?
-------
-- A librarary for configuration management
 
+- Librarary for configuration management
+- Configuration management system 
+- System integration platform 
+- An Api 
 
 ##Some links: 
 - [Chef](https://www.chef.io/chef/)
@@ -19,11 +22,28 @@ Team Members:
 
 #Key Features:
 ------------
+-
+-
+-
+-
 
 
-#Our Take:
+#Advatage
+-------------
+To name a few: 
+- open source
+- large community 
+- mature product
+
+# Disadvatage:
 --------------
+- constraints users to Ruby.
+- complex
+- push not supported
 
+#Our Take/verdict:
+--------------
+Chef constraints users to use Ruby but overall 
 
 
 #Installation Instructions:
