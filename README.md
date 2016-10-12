@@ -11,7 +11,7 @@ Team Members:
 
 Chef is a Configuration Management tool which automates how the infrastructure is configured, deployed and configured across networks on machines which could be physical, on cloud or virtual. The use of such a tool helps in ensuring that the files, softwares, packages and services are present on the respective machines and are working as required.  
   
-The need for such tool arises from the fact that the real world applications require management of multiple server machines each performing a different function. Manual management of operations and configuration in such an environment can be a daunting task and hence this calls for tools like Chef which provide Infrastructure as Code.
+The need for such tool arises from the fact that the real world applications require management of multiple server machines each performing a different function. Manual management of operations and configuration in such an environment can be a daunting task and hence this calls for tools like Chef which provide Infrastructure as Code.  
 
 ## What is chef?
 
@@ -24,12 +24,8 @@ The need for such tool arises from the fact that the real world applications req
 - [Chef](https://www.chef.io/chef/)
 - [Tutorials](https://learn.chef.io/tutorials/)
 
-#Key Features:
-------------
--
--
--
--
+#Architecture and Components :  
+Chef follows a pull mechanism where in the client nodes pull the data from the server and compare this data with what they have. Any mismatch would cause a complete fetch from server and overwritten on the node and accordingly executed. This data is referred to in the Chef terminology as the recipe. These recipes are developed on workstations by developers/admins and then pushed on to the servers. The client nodes will pull periodically from the server they are configured to talk to and perform the related tasks. All such recipes and configurations are placed within cookbooks. 
 
 
 #Advantage
