@@ -8,7 +8,15 @@ Team Members:
 
 #About the Tool:
 -----------
-Chef is a configuration management tool which 
+
+Chef is a configuration management tool which automates how the infrastructure is configured, deployed and configured, deployed and managed accross networks on machines which could be physical, on cloud or virtual.
+##workstation
+##
+
+ ## Recipe, cookbooks, et all: 
+Chef faciliatates the process of configuration management by transforming the infrastrucre to code. Each configuration setting is a treated as a recipe. A set of recipes is cookbook and a cookbook. 
+
+
 ## What is chef?
 
 - Librarary for configuration management
@@ -32,8 +40,10 @@ Chef is a configuration management tool which
 -------------
 To name a few: 
 - open source
-- large community 
+- large community with large collection of modules and configuration recipes 
 - mature product
+- git
+- supports unix, linux, windows
 
 # Disadvatage:
 --------------
