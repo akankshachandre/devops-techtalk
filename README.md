@@ -8,7 +8,14 @@ Team Members:
 
 #About the Tool:
 -----------
+## What is chef?
+------
+- A librarary for configuration management
 
+
+##Some links: 
+- [Chef](https://www.chef.io/chef/)
+- [Tutorials](https://learn.chef.io/tutorials/)
 
 #Key Features:
 ------------
@@ -23,6 +30,9 @@ Team Members:
 --------------
 
 
+# Simple Example
+-----------------
+The following are the links to the sample example:
 
 
 #DEMO
