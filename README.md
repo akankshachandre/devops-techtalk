@@ -70,9 +70,10 @@ The following are the links to the sample example:
 # Presentation
 --------------
 
-![Presentation] (link)
 
-In case the video in the presentation doesn't work, please refer to ![Video link] ()
+![Link to Presnetation] (https://github.com/stutinanda/devops-techtalk/blob/master/Tech%20Talk%20-%20Chef.pptx)
+
+In case the video in the presentation doesn't work, please refer to ![Video link] (                       https://www.youtube.com/watch?v=g_0UZe6R5pk)
 
 
 ## Further Reading: 
