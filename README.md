@@ -92,6 +92,8 @@ Once above steps are executed, a new node will be bootstrapped and all the recip
 
 This is all explained in the vide below.
 
+<a href=https://www.youtube.com/watch?v=NMk2TJU2z6A> https://www.youtube.com/watch?v=NMk2TJU2z6A </a>
+
 
 # DEMO : 
 
