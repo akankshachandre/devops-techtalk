@@ -51,7 +51,9 @@ In the same way, you can bootstrap your new node (you will need IP address, user
 
 **Long / Personalized Setup:**
 
-If you want your own chef server, then you can deploy it in following 3 ways.
+If you need to have your own chef server in your environment, then please follow the steps on official Chef website. <a href=https://docs.chef.io/install_server.html> https://docs.chef.io/install_server.html </a>
+
+
 
 # Advantages : 
 Chef is an established community with a good user base contributing to the community. This makes it easier for navigating through any related issues. Furthermore, chef recipes can be shared, for example, a recipe for deploying LAMP stack could be shared on the marketplace and someone looking for LAMP stack could pick it up and use it for their use case. It has weathered a lot since its inception and hence is technologically more mature than many CM alternatives.  
@@ -69,8 +71,26 @@ But if the use case is pretty simple with not much of a infrastructure to manage
 
 
 
-# Simple Example : 
-The following are the links to the sample example:
+# Sample Example :
+The example that we demoed had following steps followed.
+
+1. We created two cookbooks, "apache" and "apt". The default recipe in the apache cookbook has the steps which installs and starts apache2 service. Then it copies a static html page and image file to a particular directory on the node.
+
+    You can create new cookbooks using command:
+    <pre>chef cookbook create cookbook_name</pre>
+
+2. We uploaded the cookbooks to the chef server using command.
+
+   <pre>chef cookbook upload cookbook_name</pre>
+
+3. We boostrapped a new node on amazon AWS and passed the two cookbooks as the runlist. A new node can be bootstrapped using following command:
+
+    <pre> chef bootstrap < node_ip_address >   -N   < local_node_name >   -x   < user_name >  -i   < private_key_path.pem >  --sudo   -r "recipe[cookbook_1], recipe[cookbook_2]"  </pre>
+    
+ 
+Once above steps are executed, a new node will be bootstrapped and all the recipes will be downloaded and run in given order. You can go to the browser and see that apache server is running on the node.
+
+This is all explained in the vide below.
 
 
 # DEMO : 
