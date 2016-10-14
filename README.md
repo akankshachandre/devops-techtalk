@@ -22,6 +22,8 @@ Client nodes are configured to talk to servers and each client node could be ass
 ![](chef-basic-architecture.png)
 <br>
 <br>
+<center><sub>Image courtesy: doesnotscale.com</sub></center>
+<br>
   
 #### Workstation : 
 These are machines on which developers/admins develop the configuration files/recipes to be used by the chef client nodes upon pushing to chef server. You can bootstrap new chef nodes from your workstation. The workstation is connected with the Version controlling system where you can sync your code with.
