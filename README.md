@@ -54,6 +54,20 @@ But if the use case is pretty simple with not much of a infrastructure to manage
 
 # Installation Instructions :
 
+**Quick Setup:**
+
+For starting, you can use the free account on enterprize chef server available on "manage.chef.io". You can create an account on the website and create a new organization.
+Then you can download the chef starter kit, it will contain all the basic authentication keys, and a sample cookbook.
+
+Once the start kit is downloaded to your machine, you can right away start writing cookbooks and the upload them to the chef server using knife command.
+
+In the same way, you can bootstrap your new node (you will need IP address, username, password/ssh_key), may it be a physical machine, a container, local VM or a VM running on a cloud platform. Any kind of machine with above basic details can act as a chef node.
+
+
+**Long / Personalized Setup:**
+
+If you want your own chef server, then you can deploy it in following 3 ways.
+
 
 # Simple Example : 
 The following are the links to the sample example:
